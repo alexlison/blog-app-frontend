@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
 
@@ -54,9 +55,9 @@ const readValues = () => {
     <div>
        
        <div className="container">
-          <a href="#" className="position-absolute top-0 start-0 m-4 fw-semibold text-dark text-decoration-none">
-            <i className="bi bi-arrow-left-circle-fill fs-2"> Back </i>
-          </a>
+          <Link to="/" className="position-absolute top-0 start-0 m-4 fw-semibold text-dark text-decoration-none">
+            <i className="bi bi-arrow-left-circle-fill fs-2"></i>
+          </Link>
 
        </div>
         
