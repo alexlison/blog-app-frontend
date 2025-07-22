@@ -54,7 +54,7 @@ const readValues = () => {
 
   return (
     <div>
-       <NavBar />
+       
        <div className="container">
           <Link to="/" className="position-absolute top-0 start-0 m-4 fw-semibold text-dark text-decoration-none">
             <i className="bi bi-arrow-left-circle-fill fs-2"></i>

@@ -1,16 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
+  const logout = () => {
+    sessionStorage.clear();
+    navigate("/");
+  };
+
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-warning">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold text-dark" href="#">
+      <nav className="navbar navbar-expand-lg bg-warning p-3">
+        <div className="container-fluid">
+          <a className="navbar-brand fw-bold text-dark" href="#">
             Blog App
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -18,26 +25,32 @@ const NavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <Link class="nav-link" to="/createPost">
+
+          <div className="collapse navbar-collapse d-flex" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to="/createPost">
                   Create Post
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/viewMyPost">
+              <li className="nav-item">
+                <Link className="nav-link" to="/viewMyPost">
                   My Posts
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/viewAll">
+              <li className="nav-item">
+                <Link className="nav-link" to="/viewAll">
                   All Posts
                 </Link>
               </li>
             </ul>
+            <div className="ms-auto">
+              <button className="btn btn-danger" onClick={logout}>
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </nav>

@@ -32,11 +32,14 @@ const readValues = () => {
                 
                 let token = response.data.token
                 let userId = response.data.userId
+                let userName = response.data.name
                 console.log("token -> ",token)
                 console.log("userId ->",userId)
+                console.log("userName ->",userName)
 
                 sessionStorage.setItem("userId",userId)
                 sessionStorage.setItem("token",token)
+                sessionStorage.setItem("userName",userName)
 
                 navigate("/createPost")
             }
@@ -51,7 +54,6 @@ const readValues = () => {
 
   return (
     <div>
-      <NavBar />
       <div className="container mt-5 p-4 bg-light border rounded shadow" style={{ maxWidth: '400px' }}>
         
      <div className="text-center mb-3">
