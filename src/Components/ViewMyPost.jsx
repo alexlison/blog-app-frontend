@@ -1,8 +1,13 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 const ViewMyPost = () => {
   return (
-    <div>ViewMyPost</div>
+    <div>
+      <NavBar />
+      
+      ViewMyPost
+      </div>
   )
 }
 

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import NavBar from './NavBar'
 
 const CreatePost = () => {
 
@@ -44,6 +45,7 @@ const readValues = () => {
 
   return (
     <div>
+      <NavBar />
       <div className="container">
         <h4 className="m-4 text-center">Post a Message</h4>
         <div className="row">

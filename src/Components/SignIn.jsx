@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import NavBar from './NavBar'
 
 const SignIn = () => {
 
@@ -50,6 +51,7 @@ const readValues = () => {
 
   return (
     <div>
+      <NavBar />
       <div className="container mt-5 p-4 bg-light border rounded shadow" style={{ maxWidth: '400px' }}>
         
      <div className="text-center mb-3">
