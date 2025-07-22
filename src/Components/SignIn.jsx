@@ -31,11 +31,15 @@ const readValues = () => {
                 
                 let token = response.data.token
                 let userId = response.data.userId
+                let userName = response.data.name
                 console.log("token -> ",token)
                 console.log("userId ->",userId)
+                console.log("userName ->",userName)
 
                 sessionStorage.setItem("userId",userId)
+                sessionStorage.setItem("userName",userName)
                 sessionStorage.setItem("token",token)
+              
 
                 navigate("/createPost")
             }
