@@ -109,7 +109,7 @@ const readValues = () => {
               </div>
 
               <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                <button className="btn btn-warning px-4 w-100 mt-2 mb-3 p-2" onClick={readValues}>Register</button>
+                <button className="btn btn-warning" onClick={readValues}>Register</button>
               </div>
 
             </div>
