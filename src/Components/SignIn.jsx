@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import NavBar from './NavBar'
 
 const SignIn = () => {
 
@@ -39,7 +40,10 @@ const readValues = () => {
                 sessionStorage.setItem("userId",userId)
                 sessionStorage.setItem("userName",userName)
                 sessionStorage.setItem("token",token)
-              
+
+
+                sessionStorage.setItem("userName",userName)
+
 
                 navigate("/createPost")
             }
@@ -97,4 +101,4 @@ const readValues = () => {
   )
 }
 
-export default SignIn
+export default SignIn;

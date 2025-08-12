@@ -15,6 +15,7 @@ function App() {
       <Route path='/' element={ <SignIn /> } />
       <Route path='signUp' element={ <SignUp /> } />
       <Route path='createPost' element={ <CreatePost /> } />
+      <Route path='viewAll' element={ <ViewAll /> } />
       <Route path='viewMyPost' element={ <ViewMyPost /> } />
       <Route path='viewAll' element={ <ViewAll/> } />
 
